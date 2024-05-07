@@ -1,0 +1,62 @@
+body {
+    font-family: 'Lobster', cursive; 
+    background: linear-gradient(135deg, #ffcc99, #ff9966);
+    background: url('img/background1.jpg') center/cover no-repeat, linear-gradient(135deg, #ffcc99, #ff9966);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+  }
+  /* Navbar */ 
+  .navbar {
+    background-color: #e7d4e5;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed; /* Fixed navbar */
+    width: 100%; 
+    z-index: 1000; 
+    top: 0; 
+  }
+  
+  .logo img {
+    width: 140px;
+    height: 40px;
+
+  }
+  
+  .nav-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    padding-right: 50px;
+  }
+  
+  .nav-links li {
+    display: inline;
+    margin-right: 20px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .nav-links li:last-child {
+    margin-right: 0;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: #663300;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links li a:hover {
+    color: #ffa64d;
+  }
+  
+  .content {
+    padding-top: 80px; 
+  }
