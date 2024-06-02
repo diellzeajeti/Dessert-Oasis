@@ -57,3 +57,9 @@ function showSlider(type){
         next.click();
     }, timeAutoNext)
 }
+
+/** Footer */
+document.getElementById("newsletter-form").addEventListener("submit", function(event) {
+  event.preventDefault();
+  alert("Thank you for subscribing to our newsletter!");
+});
