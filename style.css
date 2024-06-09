@@ -6,7 +6,6 @@ body {
 
  header{
    font-family: 'Lobster', cursive;
-   background: linear-gradient(135deg, #ffcc99, #ff9966);
    background: url('img/background1.jpg') center/cover no-repeat, linear-gradient(135deg, #ffcc99, #ff9966);
    display: flex;
    justify-content: center;
@@ -34,6 +33,10 @@ body {
     width: 140px;
     height: 40px;
 
+  }
+
+  .logo:hover{
+    cursor: pointer;
   }
   
   .nav-links {
@@ -314,7 +317,7 @@ body {
     font-size: 12px;
   }
   
-  /* carousel */
+  /* Carousel */
   .carousel{
     height: 100%;
     margin-top: -50px;
@@ -384,7 +387,7 @@ body {
     cursor: pointer;
     background-color: #dbdbdb;
   }
-  /* thumbnail */
+
   .thumbnail{
     position: absolute;
     bottom: 50px;
@@ -419,7 +422,7 @@ body {
   .thumbnail .item .content .description{
     font-weight: 300;
   }
-  /* arrows */
+
   .arrows{
     position: absolute;
     top: 80%;
@@ -447,12 +450,9 @@ body {
     color: #000;
   }
   
-  /* animation */
   .carousel .list .item:nth-child(1){
     z-index: 1;
   }
-  
-  /* animation text in first item */
   
   .carousel .list .item:nth-child(1) .content .author,
   .carousel .list .item:nth-child(1) .content .title,
@@ -484,7 +484,7 @@ body {
   .carousel .list .item:nth-child(1) .content .buttons{
     animation-delay: 1.5s!important;
   }
-  /* create animation when next click */
+
   .carousel.next .list .item:nth-child(1) img{
     width: 150px;
     height: 220px;
@@ -527,7 +527,7 @@ body {
     }
   }
   
-  /* running time */
+  /* running time line */
   
   .carousel .time{
     position: absolute;
@@ -548,8 +548,6 @@ body {
     to{width: 0}
   }
   
-  
-  /* prev click */
   
   .carousel.prev .list .item:nth-child(2){
     z-index: 2;
