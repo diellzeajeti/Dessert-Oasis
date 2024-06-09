@@ -38,7 +38,7 @@
 .logo:hover{
     cursor: pointer;
   }
-  
+
 .nav-links {
   list-style-type: none;
   padding: 0;
@@ -130,3 +130,84 @@ h2::before{
   top: 50%;
   transform: translateY(-50%);
 }
+
+/* Menu Cards */
+.card-container-wrapper {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    padding-top: 120px;
+    overflow: hidden;
+    background-color: #f7efbc;
+  }
+  .card-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+  }
+  .card-scroll {
+    display: flex;
+  }
+  
+  .card {
+    flex: 0 0 auto;
+    width: 350px;
+    height: 400px;
+    margin: 15px 10px;
+    padding: 20px;
+    color: #000000;
+    font-family: 'Parisienne', cursive;
+    text-shadow: 2px 4px 2px rgb(255, 255, 255);
+    position: relative;
+    transition: transform 0.3s, filter 0.3s;
+    background-color: #fffcf6;
+    border-radius: 5px;
+  }
+  
+  .card h3 {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 2.2em;
+  }
+  
+  .card p {
+    font-size: 1.7em;
+  }
+  
+  .card-image {
+    width: 100%;
+    height: 60%;
+    background-size: cover;
+    background-position: center;
+    transition: filter 0.3s;
+    border-radius: 5px;
+  }
+  
+  .card:hover .card-image {
+    filter: blur(0.5px);
+  }
+  
+  .scroll-r,
+  .scroll-l {
+    background: none;
+    border: none;
+    position: absolute;
+    cursor: pointer;
+    font-family: inherit;
+    color: #ffffff;
+    font-size: calc(3rem + 2vw);
+    text-shadow: 2px 4px 2px rgba(0, 0, 0, 1);
+    z-index: 1001;
+  }
+  
+  .scroll-r {
+    right: 2%;
+    top: 40%;
+    transform: translateY(-50%);
+  }
+  
+  .scroll-l {
+    left: 2%;
+    top: 40%;
+    transform: translateY(-50%);
+  }
