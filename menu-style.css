@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.header{
+  background: linear-gradient(135deg, #ffcc99, #ff9966);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  margin: 0;
+  position: relative;
+}
+
+/* Navbar */ 
+.navbar {
+  background-color: #e7d4e5;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed; 
+  width: 102vw; 
+  z-index: 100000; 
+  top: 0; 
+  left: -10px;
+}
+
+.logo img {
+  width: 140px;
+  height: 40px;
+
+}
+
+.logo:hover{
+    cursor: pointer;
+  }
+  
+.nav-links {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  padding-right: 50px;
+}
+
+.nav-links li {
+  display: inline;
+  margin-right: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav-links li:last-child {
+  margin-right: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #663300;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #ffa64d;
+}
+
+/* Menu Slider */
+canvas{
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+.controls{
+  width: 100%;
+  height: 800px;
+  position: relative;
+  font-family: 'Parisienne', cursive;
+  z-index: 1000;
+}
+
+h2{
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  font-size: calc(1.5rem + 1.5vw);
+  text-shadow: 2px 4px 2px rgba(0, 0, 0, 1);
+}
+
+h2::before{
+  content: '';
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  bottom: 30%;
+  height: calc(18px + 0.5vw);
+  background-color: #000;
+  z-index: -1;
+}
+
+.control-r,
+.control-l{
+  background: none;
+  border: none;
+  position: absolute;
+  cursor: pointer;
+  font-family: inherit;
+  color: #fff;
+  font-size: calc(6rem + 10vw);
+  text-shadow: 2px 4px 2px rgba(0, 0, 0, 1);
+}
+
+.control-r{
+  right: 2%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.control-l{
+  left: 2%; 
+  top: 50%;
+  transform: translateY(-50%);
+}
