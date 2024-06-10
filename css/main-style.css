@@ -6,7 +6,7 @@ body {
 
  header{
    font-family: 'Lobster', cursive;
-   background: url('img/background1.jpg') center/cover no-repeat, linear-gradient(135deg, #ffcc99, #ff9966);
+   background: url('/img/background1.jpg') center/cover no-repeat, linear-gradient(135deg, #ffcc99, #ff9966);
    display: flex;
    justify-content: center;
    align-items: center;
