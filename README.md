@@ -7,8 +7,6 @@ Table of Contents
 - Technologies Used
 - Installation
 - Usage
-- Contributing
-- License
 - Contact
 
 Features
